@@ -18,6 +18,7 @@ git clone https://github.com/bmaltais/kohya_ss
 bash kohya_ss/setup.sh -vvv
 
 # install newer xformers and torchvision package
+# pip install xformers==0.0.17
 pip install xformers==0.0.19
 pip install torchvision==0.1.9
 
