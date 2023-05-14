@@ -5,7 +5,7 @@
 
 #install necessary tools
 apt update
-apt install -y libgl1 nano screen unzip # nano screen unzip optional
+apt install -y libgl1 python3-pip python-is-python3 nano screen unzip # nano screen unzip optional
 pip install cmake
 pip install lit
 pip install gdown #optional
