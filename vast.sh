@@ -24,6 +24,7 @@ pip install torchvision==0.1.9
 cp $(ls /opt/conda/lib/python3.10/site-packages/bitsandbytes/*cuda*.so | grep -v nocublaslt | tail -1) /opt/conda/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so
 export LD_LIBRARY_PATH=/opt/conda/lib:$LD_LIBRARY_PATH
 export MKL_THREADING_LAYER=1
+# export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
 echo 'export LD_LIBRARY_PATH=/opt/conda/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
 echo 'export MKL_THREADING_LAYER=1' >> ~/.bashrc
 
