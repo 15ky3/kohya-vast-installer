@@ -8,6 +8,7 @@ apt update
 apt install -y libgl1 python3-pip python-is-python3 nano screen unzip # nano screen unzip optional
 pip install cmake
 pip install lit
+# pip install cuda-python
 pip install gdown #optional
 
 # clone the repo
