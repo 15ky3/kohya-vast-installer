@@ -13,7 +13,7 @@ pip install lit
 pip install gdown #optional
 
 # clone the repo
-git clone https://github.com/bmaltais/
+git clone https://github.com/bmaltais/kohya_ss
 
 # switch into directory
 cd kohya_ss
