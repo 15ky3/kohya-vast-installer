@@ -1,5 +1,10 @@
 #!/bin/bash
 
+### DONT RUN IT, IT DONT WORK!
+#
+### EXECUTE THE STEPS MANUALLY!
+
+
 # Bash Script to Install kohya_ss on a Vast ai Machine
 # tested with RTX 3090 and pytorch/pytorch_2.0.0-cuda11.7-cudnn8-runtime image
 # Script need to be tested.
