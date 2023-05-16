@@ -27,6 +27,7 @@ source $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 ln -sr $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer.so.8 $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer.so.7
 ln -sr $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer_plugin.so.8 $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer_plugin.so.7
 
+cd ..
 
 # change gui.sh
 rm kohya_ss/gui.sh
