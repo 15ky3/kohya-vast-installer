@@ -51,6 +51,13 @@ source $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 ln -sr $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer.so.8 $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer.so.7
 ln -sr $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer_plugin.so.8 $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer_plugin.so.7
 
+#### if Captioning doesnt work: no module found library...
+
+pip install --use-pep517 --upgrade -r requirements.txt
+
+#### just a quick note
+
+
 #switch back
 cd ..
 
