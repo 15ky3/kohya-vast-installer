@@ -4,6 +4,7 @@
 # tested with RTX 3090 and pytorch/pytorch_2.0.0-cuda11.7-cudnn8-runtime image
 # Script need to be tested.
 # Made with the Help of Github User Kuriot. Thanks :)
+
 #install necessary tools
 apt update
 apt install -y libgl1 nano screen unzip # nano screen unzip optional
@@ -14,6 +15,7 @@ pip install gdown #optional
 # clone the repo
 git clone https://github.com/bmaltais/
 
+# switch into directory
 cd kohya_ss
 
 conda create -n kohya python=3.10.9
@@ -28,6 +30,7 @@ source $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 ln -sr $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer.so.8 $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer.so.7
 ln -sr $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer_plugin.so.8 $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer_plugin.so.7
 
+#switch back
 cd ..
 
 # change gui.sh
