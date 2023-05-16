@@ -50,7 +50,6 @@ SCRIPT_DIR=\$(cd -- "\$(dirname -- "\$0")" && pwd)
 cd "\$SCRIPT_DIR"
 
 python "\$SCRIPT_DIR/kohya_gui.py" "\$@"
-
 EOF
 
 # make executable
