@@ -2,7 +2,8 @@
 
 # Bash Script to Install kohya_ss on a Vast ai Machine
 # tested with RTX 3090 and pytorch/pytorch_2.0.0-cuda11.7-cudnn8-runtime image
-
+# Script need to be tested.
+# Made with the Help of Github User Kuriot. Thanks :)
 #install necessary tools
 apt update
 apt install -y libgl1 nano screen unzip # nano screen unzip optional
