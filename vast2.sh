@@ -28,7 +28,7 @@ git clone https://github.com/bmaltais/kohya_ss
 
 # switch into directory
 cd kohya_ss
-
+eval "$(conda shell.bash hook)"
 conda create -n kohya python=3.10.9
 conda activate kohya
 conda install pytorch==1.13.1 torchvision==0.14.1 xformers -c pytorch -c nvidia -c xformers
@@ -61,10 +61,10 @@ echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/:$CUDNN_PATH/lib
 source $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 ln -sr $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer.so.8 $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer.so.7
 ln -sr $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer_plugin.so.8 $CONDA_PREFIX/lib/python3.10/site-packages/tensorrt_libs/libnvinfer_plugin.so.7
-
+conda deactivate
 #### if Captioning doesnt work: no module found library...
 
-pip install --use-pep517 --upgrade -r requirements.txt
+# pip install --use-pep517 --upgrade -r requirements.txt
 
 #### just a quick note
 
@@ -78,6 +78,7 @@ rm kohya_ss/gui.sh
 cat <<EOF > kohya_ss/gui.sh
 #!/usr/bin/env bash
 
+eval "\$(conda shell.bash hook)"
 source ~/.miniconda3/etc/profile.d/conda.sh
 conda activate kohya
 
