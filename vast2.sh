@@ -55,6 +55,7 @@ python3 -m pip install requests==2.28.2
 python3 -m pip install timm==0.6.12
 python3 -m pip install huggingface-hub==0.13.3
 python3 -m pip install lycoris_lora==0.1.4
+pip install --use-pep517 --upgrade -r requirements.txt
 mkdir -p $CONDA_PREFIX/etc/conda/activate.d
 echo 'CUDNN_PATH=$(dirname $(python -c "import nvidia.cudnn;print(nvidia.cudnn.__file__)"))' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/:$CUDNN_PATH/lib' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
